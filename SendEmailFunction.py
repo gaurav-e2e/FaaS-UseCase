@@ -54,7 +54,7 @@ def send_email(recipient, otp):
         return False
 
 def handle(event, context):
-    logger.info("Lambda function invoked")
+    logger.info("E2E function invoked")
     
     try:
         payload = json.loads(event.body)
